@@ -37,5 +37,6 @@ npx hardhat verify --network "arbitrum-sepolia" <contract address> <wallet addre
 ##For frontend app
 # Create a new Next.js app
 npx create-next-app <name>
+
 # Run the app in development mode
 npm run dev
