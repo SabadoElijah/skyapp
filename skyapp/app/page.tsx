@@ -117,23 +117,20 @@ export default function Home() {
   };
   //</Import Token>
 
-  //HTML/TAILWIND BASTA DESIGN
+  //HTML/TAILWIND BASTA DESIGN  BAGUHIN NIYO TO PLS LANG
   return (
-    <body style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold', backgroundColor: '#ffd9b3', color: '#3b1d18', margin: 0, padding: 0,
-    backgroundImage: 'url("ERC20-main/ERC20-main/catapp/bla.jpg")', // Replace with the path to your image
-    backgroundSize: 'cover', // Adjust as needed
-    backgroundRepeat: 'repeat',  }}>
+    
       <main>
         <p style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '30px', marginTop: '10px' }}>
-        ฅ^•ﻌ•^ฅ  Welcome to Mint/Staking of Sky Tokens  ฅ^•ﻌ•^ฅ
+        Welcome to Mint/Staking of Sky Tokens
         </p>
   
         <div style={{ minHeight: '25vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-          <button onClick={() => { connectWallet(); }} className="p-3 bg-amber-950 text-white rounded">
+          <button onClick={() => { connectWallet(); }} className="p-3 bg-red-400 text-white rounded">
             {walletKey !== "" ? walletKey : " Connect wallet"}
           </button>
   
-          <button onClick={importToken} className="p-3 bg-amber-950 text-white rounded" style={{ marginTop: '10px' }}>
+          <button onClick={importToken} className="p-3 bg-red-400 text-white rounded" style={{ marginTop: '10px' }}>
             Import Token
           </button>
         </div>
@@ -147,13 +144,10 @@ export default function Home() {
             type="number"
             value={mintingAmount}
             onChange={(e) => mintAmountChange(e)}
-            style={{ color: 'black', border: '2px solid #3b1d18', borderRadius: '4px', padding: '1px' }}
           />
           <button
             onClick={() => { mintCoin(); }}
-            className="p-3 bg-amber-950 text-white rounded"
-            style={{ marginTop: '10px', fontFamily: 'Courier New' }}
-          >
+            className="p-3 bg-red-400 text-white rounded">
             {"Mint Token"}
           </button>
         </div>
@@ -168,13 +162,11 @@ export default function Home() {
             type="number"
             value={stakingAmount}
             onChange={(e) => stakeAmountChange(e)}
-            style={{ color: 'black', border: '2px solid #3b1d18', borderRadius: '4px', padding: '1px' }}
           />
   
           <button
             onClick={stakeCoin}
-            className="p-3 bg-amber-950 text-white rounded"
-            style={{ marginTop: '5px' , fontFamily: 'Courier New'}}>
+            className="p-3 bg-red-400 text-white rounded">
             {"Stake It"}
           </button>
         </div>
@@ -185,13 +177,11 @@ export default function Home() {
 
           <button
             onClick={withdrawCoin}
-            className="p-3 bg-amber-950 text-white rounded"
-            style={{fontFamily: 'Courier New'}}
-          >
-            {"Withdraw ≽^•⩊•^≼"}
+            className="p-3 bg-red-400 text-white rounded">
+            {"Withdraw"}
           </button>
         </div>
       </main>
-    </body>
+
   );
 }  
